@@ -8,4 +8,5 @@ if adventure == "yes":
     option = input("fighting or Saving?  ")
     if option == "fighting":
         print("You are SubZero a bounty hunter Who's mission is to kill lord JOJO to claim your gold!")
+        print (" You excel in Defense Attack and Stamina")
     jojo = input("Are you ready to face jojo? Yes/No  ")
