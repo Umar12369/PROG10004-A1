@@ -3,6 +3,8 @@ from Game import Warrior_Dice
 from Game import SRK_Dice
 from Game import Pakola_Dice
 from Game import Jojo_Dice
+from Game import Leo_Dice
+from Game import Scorpion_Dice
 
 from random import random
 from tkinter.messagebox import YES
@@ -10,16 +12,10 @@ from tkinter.messagebox import YES
 print("Welcome to KingZone Dragon X")
 adventure = input("Would you like to go on a adventure? Yes/No ")  
 if adventure == "yes":
-    print("Pick your adventure")
-    option = input("fighting or Saving?  ")
-    if option == "fighting":
-        print("You are SubZero a bounty hunter Who's mission is to kill lord JOJO to claim your gold!")
-        print (" You excel in Defense Attack and Stamina")
-    if option == "saving":
-        print("you are now scorpion a banker who lost all his money")
-    t = input("Are you ready to earn some money back? YES/NO")
-    if t == YES:
-        print("GOOD your attributes are Smart, Slick and Manipulative")
+    print("Great!")
+    option = input("Are you ready? YES/NO  "  )
+    if option == "YES":
+        print("You are SubZero a bounty hunter Who's mission is to kill lord JOJO to claim your gold!")   
     jojo = input("Are you ready to face jojo? Yes/No  ")
     if jojo == YES:
         print("You will first need to beat one of jojo's minions called SRK")
@@ -80,3 +76,38 @@ else:
 
 print("Game Over")
 print("Thank You For Playing")
+
+
+print("Welcome to KingZone Dragon X")
+adven = input("Would you like to go on a another adventure? Yes/No ")  
+if adven == "yes":
+    print("Great! you are now scorpion ")
+    print (" You excel in Defense Attack and Stamina")
+    if option == "saving":
+        print("you are now scorpion a banker who lost all his money")
+    t = input("Are you ready to earn some money back? YES/NO  ")
+    if t == YES:
+        print("GOOD your attributes are Smart, Slick and Manipulative")
+        print( " You Will go against 3 gamblers at a casino to earn all your money back")
+    e = input( "Are you ready to earn some money? Yes/NO ")
+    if e == YES:
+        print( "You are against gambler LEO" )
+    d = input("Are you ready to gamble against Leo YES/NO"  )
+
+Scorpion_Dice = random.randint(2,12)
+Leo_Dice = random.randint(2,12)
+
+print("Scorpion rolled: ", Scorpion_Dice)
+print("Leo rolled: ", Leo_Dice)
+
+if Scorpion_Dice > Leo_Dice:
+    print("Scorpion wins")
+elif Leo_Dice > Scorpion_Dice:
+    print("Leo wins")
+else:
+    print("It's a draw")
+
+print("Game Over")   
+
+
+
