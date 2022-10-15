@@ -35,7 +35,6 @@ print("Game Over")
 
 
 
-
 Warrior_Dice = random.randint(2,12)
 Jojo_Dice = random.randint(2,12)
 
@@ -46,6 +45,22 @@ if Warrior_Dice > Jojo_Dice:
     print("Warrior wins")
 elif Jojo_Dice > Warrior_Dice:
     print("JOJO wins")
+else:
+    print("It's a draw")
+
+print("Game Over")
+
+
+Scorpion_Dice = random.randint(2,12)
+Leo_Dice = random.randint(2,12)
+
+print("Scorpion rolled: ", Scorpion_Dice)
+print("Leo rolled: ", Leo_Dice)
+
+if Scorpion_Dice > Leo_Dice:
+    print("Scorpion wins")
+elif Leo_Dice > Scorpion_Dice:
+    print("Leo wins")
 else:
     print("It's a draw")
 
