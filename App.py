@@ -15,6 +15,11 @@ if adventure == "yes":
     if option == "fighting":
         print("You are SubZero a bounty hunter Who's mission is to kill lord JOJO to claim your gold!")
         print (" You excel in Defense Attack and Stamina")
+    if option == "saving":
+        print("you are now scorpion a banker who lost all his money")
+    t = input("Are you ready to earn some money back? YES/NO")
+    if t == YES:
+        print("GOOD your attributes are Smart, Slick and Manipulative")
     jojo = input("Are you ready to face jojo? Yes/No  ")
     if jojo == YES:
         print("You will first need to beat one of jojo's minions called SRK")
