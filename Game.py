@@ -65,3 +65,19 @@ else:
     print("It's a draw")
 
 print("Game Over")
+
+
+Scorpion_Dice = random.randint(2,12)
+John_Dice = random.randint(2,12)
+
+print("Scorpion rolled: ", John_Dice)
+print("John rolled: ", Leo_Dice)
+
+if Scorpion_Dice > John_Dice:
+    print("Scorpion wins")
+elif John_Dice > Scorpion_Dice:
+    print("John wins")
+else:
+    print("It's a draw")
+
+print("Game Over")
