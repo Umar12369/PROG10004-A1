@@ -6,7 +6,7 @@ from Game import Jojo_Dice
 from Game import Leo_Dice
 from Game import Scorpion_Dice
 from Game import John_Dice
-
+from Game import Salman_Dice
 from random import random
 from tkinter.messagebox import YES
 
@@ -112,7 +112,7 @@ if h == YES:
 l = input("Are you ready to gamble against John? Yes/NO "  )
 
 print("Scorpion rolled: ", John_Dice)
-print("John rolled: ", Leo_Dice)
+print("John rolled: ", John_Dice)
 
 if Scorpion_Dice > John_Dice:
     print("Scorpion wins")
@@ -123,3 +123,21 @@ else:
 
 print("Game Over")
 
+O = input("Do you want to continue?  Yes/NO  "  )
+if O == YES:
+    print("Congrats! on reaching the Final Gambler")
+    print("You will now gamble against Salman ")
+j = input ("Are you READY? YES/NO "  )
+
+if j == YES:
+    print("Scorpion rolled: ", Scorpion_Dice)
+    print("Salman rolled: ", Salman_Dice)
+
+    if Scorpion_Dice > Salman_Dice:
+        print("Scorpion wins")
+    elif Salman_Dice > Scorpion_Dice:
+        print("Salman wins")
+    else:
+        print("It's a draw")
+
+print("Thank YOU FOR PLAYING KINGZONE DRAGON X")
