@@ -1,0 +1,7 @@
+"The second role is of Scorpion"
+"Scorpion is a banker who fights works and gambles a lot"
+" Attributes of Scorpion are Smart, Slick and Manipulative "
+"Based on the number of the dice will determine whether or not scorpion wins his gamble match against another gambler"
+"Scorpion will gamble against 3 gambler each one being smarter than the previous one"
+"Scorpion goal is to beat the gamblers and get his money back"
+"Once he beats the final gambler he wins"

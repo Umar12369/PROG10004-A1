@@ -1,0 +1,7 @@
+"The first role is of Subzero"
+"Subzero is a warrior who fights monsters and collects bounty"
+" Attributes of subzero are strength Defense and Stamina "
+"Based on the number of the dice will determine whether or not sub zero wins or loses"
+"Subzero will fight 3 monster each one being stronger than the previous one"
+"Subzero goal is to beat the Final Boss and collect the gold"
+"Once he kills the final boss game over"

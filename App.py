@@ -3,20 +3,21 @@ from Game import Warrior_Dice
 from Game import SRK_Dice
 from Game import Pakola_Dice
 from Game import Jojo_Dice
-from Game import Leo_Dice                
+from Game import Leo_Dice                # All these imports are from the game module otherwise the dice game wouldn't work
 from Game import Scorpion_Dice
 from Game import John_Dice
 from Game import Salman_Dice
 from random import random
-from tkinter.messagebox import YES
+from tkinter.messagebox import YES        # this tkinter module showed up automatically whenever i put capital YES in my if statments
 
 print("Welcome to KingZone Dragon X")
 adventure = input("Would you like to go on a adventure? Yes/No ")  
-if adventure == "yes":
+if adventure == "yes":    # if statments
     print("Great!")
     option = input("Are you ready? YES/NO  "  )
-    if option == "YES":
-        print("You are SubZero a bounty hunter Who's mission is to kill lord JOJO to claim your gold!")   
+    if option == "YES":    # if condition met print the statment
+        print("You are SubZero a bounty hunter Who's mission is to kill lord JOJO to claim your gold!")
+        print(" Your attributes are strength Defense and Stamina")   
     jojo = input("Are you ready to face jojo? Yes/No  ")
     if jojo == YES:
         print("You will first need to beat one of jojo's minions called SRK")
@@ -26,7 +27,7 @@ if adventure == "yes":
         print( " Depending on the number of the dice is how strong your attack will be")
         print("rolling Dice  ")
 
-    if Warrior_Dice > SRK_Dice:
+    if Warrior_Dice > SRK_Dice:      # Dice game if warrior dice is higher than srk dice it will print warrior wins
         print("Warrior wins")
     elif SRK_Dice > Warrior_Dice:
         print("SRK wins")
@@ -46,7 +47,7 @@ if adventure == "yes":
     if a == YES:
         print(" goodluck!")
 
-    print("warrior rolled: ", Warrior_Dice)
+    print("warrior rolled: ", Warrior_Dice)    # exactly the same concept as the previous dice game just the name changed
     print("Pakola rolled: ", Pakola_Dice)
 
     if Warrior_Dice > SRK_Dice:
@@ -65,7 +66,7 @@ c = input(" ARE you ready to go against the Final BOSS JOJO? YES/NO "  )
 if c == YES:
     print("GOODLUCK!!")
 
-print("warrior rolled: ", Warrior_Dice)
+print("warrior rolled: ", Warrior_Dice)   # Same concept as the other dice game just name switched
 print("JOJO rolled: ", Jojo_Dice)
 
 if Warrior_Dice > Jojo_Dice:
