@@ -5,6 +5,7 @@ from Game import Pakola_Dice
 from Game import Jojo_Dice
 from Game import Leo_Dice
 from Game import Scorpion_Dice
+from Game import John_Dice
 
 from random import random
 from tkinter.messagebox import YES
@@ -92,10 +93,7 @@ if adven == "yes":
     e = input( "Are you ready to earn some money? Yes/NO ")
     if e == YES:
         print( "You are against gambler LEO" )
-    d = input("Are you ready to gamble against Leo YES/NO"  )
-
-Scorpion_Dice = random.randint(2,12)
-Leo_Dice = random.randint(2,12)
+    d = input("Are you ready to gamble against Leo YES/NO   "  )
 
 print("Scorpion rolled: ", Scorpion_Dice)
 print("Leo rolled: ", Leo_Dice)
@@ -108,6 +106,20 @@ else:
     print("It's a draw")
 
 print("Game Over")   
+h = input("Would you like to continue? Yes/NO  "  )
+if h == YES:
+    print(" You are now against the second gambler John")
+l = input("Are you ready to gamble against John? Yes/NO "  )
 
+print("Scorpion rolled: ", John_Dice)
+print("John rolled: ", Leo_Dice)
 
+if Scorpion_Dice > John_Dice:
+    print("Scorpion wins")
+elif John_Dice > Scorpion_Dice:
+    print("John wins")
+else:
+    print("It's a draw")
+
+print("Game Over")
 
